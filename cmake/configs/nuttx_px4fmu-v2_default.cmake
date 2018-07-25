@@ -6,48 +6,48 @@ set(config_module_list
 	#
 	# Board support modules
 	#
-	#drivers/barometer
-	#drivers/differential_pressure
-	#drivers/distance_sensor
-	#drivers/magnetometer
-	#drivers/telemetry
+	drivers/barometer
+	drivers/differential_pressure
+	drivers/distance_sensor
+	drivers/magnetometer
+	drivers/telemetry
 
-	#drivers/barometer/bmp280
+	drivers/barometer/bmp280
 	drivers/barometer/ms5611
-	#drivers/blinkm
-	#drivers/bst
+	drivers/blinkm
+	drivers/bst
 	drivers/camera_trigger
-	#drivers/differential_pressure/ets
+	drivers/differential_pressure/ets
 	drivers/differential_pressure/ms4525
 	drivers/differential_pressure/ms5525
 	drivers/differential_pressure/sdp3x
 	drivers/distance_sensor/ll40ls
-	#drivers/distance_sensor/mb12xx
+	drivers/distance_sensor/mb12xx
 	drivers/distance_sensor/sf0x
 	drivers/distance_sensor/sf1xx
 	drivers/distance_sensor/srf02
-	#drivers/distance_sensor/teraranger
-	#drivers/distance_sensor/tfmini
-	#drivers/distance_sensor/ulanding
-	#drivers/frsky_telemetry
+	drivers/distance_sensor/teraranger
+	drivers/distance_sensor/tfmini
+	drivers/distance_sensor/ulanding
+	drivers/frsky_telemetry
 	drivers/gps
-	#drivers/hott
-	#drivers/imu/adis16448
-	#drivers/imu/bmi160
+	drivers/hott
+	drivers/imu/adis16448
+	drivers/imu/bmi160
 	drivers/imu/l3gd20
 	drivers/imu/lsm303d
 	drivers/imu/mpu6000
 	drivers/imu/mpu9250
-	#drivers/iridiumsbd
-	#drivers/irlock
+	drivers/iridiumsbd
+	drivers/irlock
 	drivers/magnetometer/hmc5883
 	drivers/magnetometer/lis3mdl
-	#drivers/mb12xx
-	#drivers/mkblctrl
-	#drivers/oreoled
-	#drivers/protocol_splitter
+	drivers/mb12xx
+	drivers/mkblctrl
+	drivers/oreoled
+	drivers/protocol_splitter
 	drivers/pwm_input
-	#drivers/pwm_out_sim
+	drivers/pwm_out_sim
 	drivers/px4flow
 	drivers/px4fmu
 	drivers/px4io
@@ -55,45 +55,45 @@ set(config_module_list
 	drivers/stm32
 	drivers/stm32/adc
 	drivers/stm32/tone_alarm
-	#drivers/tap_esc
+	drivers/tap_esc
 	drivers/vmount
 	modules/sensors
 
 	#
 	# System commands
 	#
-	#systemcmds/bl_update
-	#systemcmds/config
-	#systemcmds/dumpfile
-	#systemcmds/esc_calib
+	systemcmds/bl_update
+	systemcmds/config
+	systemcmds/dumpfile
+	systemcmds/esc_calib
 	systemcmds/hardfault_log
-	#systemcmds/led_control
+	systemcmds/led_control
 	systemcmds/mixer
-	#systemcmds/motor_ramp
-	#systemcmds/motor_test
+	systemcmds/motor_ramp
+	systemcmds/motor_test
 	systemcmds/mtd
-	#systemcmds/nshterm
+	systemcmds/nshterm
 	systemcmds/param
 	systemcmds/perf
 	systemcmds/pwm
 	systemcmds/reboot
-	#systemcmds/sd_bench
+	systemcmds/sd_bench
 	systemcmds/top
-	#systemcmds/topic_listener
+	systemcmds/topic_listener
 	systemcmds/tune_control
 	systemcmds/ver
 
 	#
 	# Testing
 	#
-	#drivers/distance_sensor/sf0x/sf0x_tests
-	#drivers/test_ppm
-	#lib/controllib/controllib_test
-	#lib/rc/rc_tests
-	#modules/commander/commander_tests
-	#modules/mavlink/mavlink_tests
-	#modules/uORB/uORB_tests
-	#systemcmds/tests
+	drivers/distance_sensor/sf0x/sf0x_tests
+	drivers/test_ppm
+	lib/controllib/controllib_test
+	lib/rc/rc_tests
+	modules/commander/commander_tests
+	modules/mavlink/mavlink_tests
+	modules/uORB/uORB_tests
+	systemcmds/tests
 
 	#
 	# General system control
@@ -101,7 +101,7 @@ set(config_module_list
 	modules/camera_feedback
 	modules/commander
 	modules/events
-	#modules/gpio_led
+	modules/gpio_led
 	modules/land_detector
 	modules/load_mon
 	modules/mavlink
@@ -111,20 +111,20 @@ set(config_module_list
 	#
 	# Estimation modules
 	#
-	#modules/attitude_estimator_q
+	modules/attitude_estimator_q
 	modules/ekf2
-	#modules/local_position_estimator
-	#modules/position_estimator_inav
-	#modules/landing_target_estimator
-	#modules/wind_estimator
+	modules/local_position_estimator
+	modules/position_estimator_inav
+	modules/landing_target_estimator
+	modules/wind_estimator
 
 	#
 	# Vehicle Control
 	#
 	modules/fw_att_control
 	modules/fw_pos_control_l1
-	#modules/gnd_att_control
-	#modules/gnd_pos_control
+	modules/gnd_att_control
+	modules/gnd_pos_control
 	modules/mc_att_control
 	modules/mc_pos_control
 	modules/vtol_att_control
@@ -142,17 +142,17 @@ set(config_module_list
 	#
 	# OBC challenge
 	#
-	#examples/bottle_drop
+	examples/bottle_drop
 
 	#
 	# Rover apps
 	#
-	#examples/rover_steering_control
+	examples/rover_steering_control
 
 	#
 	# Segway
 	#
-	#examples/segway
+	examples/segway
 
 	#
 	# Demo apps
@@ -160,16 +160,16 @@ set(config_module_list
 
 	# Tutorial code from
 	# https://px4.io/dev/px4_simple_app
-	#examples/px4_simple_app
+	examples/px4_simple_app
 
 	# Tutorial code from
 	# https://px4.io/dev/debug_values
-	#examples/px4_mavlink_debug
+	examples/px4_mavlink_debug
 
 	# Tutorial code from
 	# https://px4.io/dev/example_fixedwing_control
-	#examples/fixedwing_control
+	examples/fixedwing_control
 
 	# Hardware test
-	#examples/hwtest
+	examples/hwtest
 )
